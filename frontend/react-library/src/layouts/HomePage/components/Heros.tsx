@@ -32,6 +32,7 @@ export const Heros = () => {
                                 and our books are always going to be our
                                 top priority.
                             </p>
+                            <a className='btn main-color btn-lg text-white' href='#'>Sign up</a>
                         </div>
                     </div>
                     <div className='col-sm-6 col-md-6'>

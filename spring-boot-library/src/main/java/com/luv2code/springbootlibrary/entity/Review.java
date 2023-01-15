@@ -11,7 +11,7 @@ import java.util.Date;
 public class Review {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
@@ -23,12 +23,13 @@ public class Review {
     private Date date;
 
     @Column(name = "rating")
-    private Double rating;
+    private double rating;
 
     @Column(name = "book_id")
     private Long bookId;
 
     @Column(name = "review_description")
     private String reviewDescription;
+
 
 }

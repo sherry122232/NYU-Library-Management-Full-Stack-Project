@@ -1,4 +1,12 @@
+import { useOktaAuth } from "@okta/okta-react";
+import { Link } from "react-router-dom";
+
+
 export const Heros = () => {
+
+
+    const { authState } = useOktaAuth(); // can use this to see whether the author is authenticated
+
     return (
         <div>
             <div className='d-none d-lg-block'>
@@ -15,7 +23,12 @@ export const Heros = () => {
                                 Whether it is to learn a new skill or grow within one,
                                 we will be able to provide the top content for you!
                             </p>
-                            <a className='btn main-color btn-lg text-white' href='#'>Sign up</a>
+                            {authState?.isAuthenticated ?
+                                <Link type="button" className="btn main-color btn-lg text-white" to={"search"}>Explore top books</Link>
+                                :
+                                <Link className='btn main-color btn-lg text-white' to={'/login'}>Sign up</Link>
+                            }
+
                         </div>
                     </div>
                 </div>
@@ -32,14 +45,19 @@ export const Heros = () => {
                                 and our books are always going to be our
                                 top priority.
                             </p>
-                            <a className='btn main-color btn-lg text-white' href='#'>Sign up</a>
+                            {authState?.isAuthenticated ?
+                                <Link type="button" className="btn main-color btn-lg text-white" to={"search"}>Explore top books</Link>
+                                :
+                                <Link className='btn main-color btn-lg text-white' to={'/login'}>Sign up</Link>
+                            }
+
                         </div>
                     </div>
                     <div className='col-sm-6 col-md-6'>
                         <div className='col-image-right'></div>
                     </div>
                 </div>
-                
+
             </div>
 
             {/* Mobile Heros */}
@@ -54,7 +72,12 @@ export const Heros = () => {
                                 Whether it is to learn a new skill or grow within one,
                                 we will be able to provide the top content for you!
                             </p>
-                            <a className='btn main-color btn-lg text-white' href='#'>Sign up</a>
+                            {authState?.isAuthenticated ?
+                                <Link type="button" className="btn main-color btn-lg text-white" to={"search"}>Explore top books</Link>
+                                :
+                                <Link className='btn main-color btn-lg text-white' to={'/login'}>Sign up</Link>
+                            }
+
                         </div>
                     </div>
                     <div className='m-2'>

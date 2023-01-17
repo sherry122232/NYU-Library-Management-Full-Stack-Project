@@ -1,10 +1,15 @@
 # NYU-Library-Management-Full-Stack-Project
 
-<img width="1450" alt="image" src="https://user-images.githubusercontent.com/45084681/211243393-7635f0a7-b6ae-4915-aa6c-a446904a1aeb.png">
+### Guest Mode 
+![7097CF9B-A746-4778-88A8-386A4F36020B](https://user-images.githubusercontent.com/45084681/212805350-d7cafef5-940e-400d-b425-79bb4b3d8cae.gif)
 
-<img width="1459" alt="image" src="https://user-images.githubusercontent.com/45084681/211243281-042dbbf3-c108-4dac-b10c-95722570fcac.png">
 
+### Admin Mode / Student Mode(Cannot enter into the "Admin" page)
+![ED1C5C70-645A-400F-9C18-4FBB9396AC36_2_0_a](https://user-images.githubusercontent.com/45084681/212805354-3c28f55b-8bc7-4be3-82c0-4bfc853c6b4a.gif)
 
+### Technologies
+Frontend:  React, Javascript, Typescript, html5/css3, Bootstrap.  
+Backend:  MySQL, Java Spring Boot. 
 
 ### Introduction  
 Author: Sheyla  
@@ -16,10 +21,31 @@ Author: Sheyla
 
 
 ### Release 1.0  
-* Static library frontend.  
+* Basic framework of library frontend and backend.  
 
+### Release 2.0  
+* Finish guest mode.
+* Search books by keywords and categories.
+* View the book review.
+
+### Release 3.0  
+* Finish student mode(with authentication and authorization).
+* Supporting:  
+  Login in/out.  
+  Book loan.   
+  Extend the return date.   
+  Return book.   
+  Write book review with star and description(optional).    
+  Ask admin questions.  
+
+### Release 4.0  
+* Finish Admin mode(Support library service)
+* Supporting:  
+  Answer students' questions.  
+  Update books' quantities.
+  Delate/Add new books.  
 
 ### To start
-1. Run IntelliJ IDEA (backend
+1. Run IntelliJ IDEA (backend)
 2. In VS code, npm start (frontend)
 
